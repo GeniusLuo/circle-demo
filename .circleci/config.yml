@@ -1,0 +1,9 @@
+version: 2.1
+jobs:
+  build:
+    docker:
+      - image: circleci/node:10
+      tag: '10.4'
+    steps:
+      - run: echo "A first hello"
+      - run: npm -v
